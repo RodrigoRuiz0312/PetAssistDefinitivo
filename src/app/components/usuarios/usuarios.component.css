@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+.contenedor {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.about {
+    text-align: justify;
+    width: 700px;
+    height: 300px;
+}
+
+.about p {
+    color: black;
+    font-family: "Oxanium", sans-serif;
+}
+
+.about img {
+    display: block;
+    margin: 0 auto;
+}

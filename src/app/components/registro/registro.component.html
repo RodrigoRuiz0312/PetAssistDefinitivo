@@ -1,0 +1,48 @@
+<div class="container-form login">
+  <div class="information">
+      <div class="info-childs">
+          <h2>¡¡Bienvenido!!</h2>
+          <img src="images/saludo.png">
+          <p>Registra los datos que se solicitan para crear una cuenta</p>
+      </div>
+  </div>
+
+  <div class="form-information">
+      <div class="form-information-childs">
+          <h2>Registro</h2>
+          <div class="form">
+              <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+                  <br>
+                  <div class="tipo-usuario">
+                      <label>
+                          <input type="radio" formControlName="tipo" value="cliente" checked>
+                          Cliente
+                      </label>
+                      <label>
+                          <input type="radio" formControlName="tipo" value="veterinario">
+                          Veterinario
+                      </label>
+                  </div>
+
+                  <div>
+                      <label>
+                          <img src="images/usuario.png" alt="Usuario" class="input-icon">
+                          <input type="text" placeholder="Usuario o Email" formControlName="usuario" required>
+                      </label>
+                  </div>
+                  <div>
+                      <label class="password-container">
+                          <img src="images/contraseña.png" alt="Contraseña" class="input-icon">
+                          <input class="input" type="password" placeholder="Contraseña" formControlName="contraseña" required>
+                          <i class="bx bx-show toggle-password" id="togglePassword"></i>
+                      </label>
+                  </div>
+
+                  <div id="botonesLog">
+                      <input type="submit" value="Registrar">
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
